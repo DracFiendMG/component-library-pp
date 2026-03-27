@@ -1,0 +1,28 @@
+{
+  "name": "component-library-pp",
+  "version": "1.0.0",
+  "description": "Collection of different types of reusable components",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DracFiendMG/component-library-pp.git"
+  },
+  "author": "Sreeram Reddy Velagala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DracFiendMG/component-library-pp/issues"
+  },
+  "homepage": "https://github.com/DracFiendMG/component-library-pp#readme",
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.1",
+    "vite": "^8.0.3"
+  }
+}
