@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --gray: #F3F4F6;
+    --red: #FEE2E2;
+    --yellow: #FEF3C7;
+    --green: #D1FAE5;
+    --blue: #DBEAFE;
+    --indigo: #E0E7FF;
+    --purple: #EDE9FE;
+    --pink: #FCE7F3;
+
+    --font-gray: #1F2937;
+    --font-red: #991B1B;
+    --font-yellow: #92400E;
+    --font-green: #065F46;
+    --font-blue: #1E40AF;
+    --font-indigo: #3730A3;
+    --font-purple: #5B21B6;
+    --font-pink: #9D174D;
+
+    --square: 8px;
+    --pill: 24px;
+}
+
+.badge-container {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 32px; */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+}
+
+h1 {
+    grid-column: 4 / -1;
+    font-family: "Permanent Marker", sans-serif;
+    font-size: 88px;
+    font-weight: 400;
+    align-self: flex-start;
+}
+
+.square {
+    grid-column: 1 / -1;
+}
+
+.pill {
+    grid-column: 1 / -1;
+}
+
+.flex {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* align-items: flex-start; */
+    gap: 32px;
+    width: min(100%, 1200px);
+}
+
+.flex > p {
+    grid-column: 1 / 4;
+    font-family: "Permanent Marker", sans-serif;
+    font-size: 30px;
+    color: #5E5D5D;
+    margin: 0;
+    min-width: 8ch;
+    text-align: right;
+}
+
+.badge-row {
+    grid-column: 4 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    flex: 1;
+    min-width: 0;
+}
+
+.badge {
+    padding: 4px 24px;
+    font-size: 28px;
+    font-weight: 500;
+}

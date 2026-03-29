@@ -1,3 +1,8 @@
+import BadgeContainer from "./components/BadgeContainer";
+
+
 export default function App() {
-    return <div>Hello, World!</div>
+    return (
+        <BadgeContainer />
+    )
 }
