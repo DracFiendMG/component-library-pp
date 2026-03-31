@@ -1,6 +1,6 @@
 export default function BannerRows({ children }) {
     return (
-        <div>
+        <div className="banner-row">
             { children }
         </div>
     )
