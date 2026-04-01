@@ -6,6 +6,7 @@ export default function CardContainer() {
             <h1>Cards</h1>
             <div className="cards">
                 <Card />
+                <p className="card-hover">Hover</p>
                 <Card />
             </div>
         </div>
