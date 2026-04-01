@@ -1,4 +1,4 @@
-import { banners } from "../data/banners";
+import { banners } from "../../data/banners";
 import Banner from "./Banner";
 import BannerRows from "./BannerRows";
 
