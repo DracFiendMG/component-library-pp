@@ -7,8 +7,8 @@ export default function BannerContainer() {
         return (
             <BannerRows>
                 <p>{ banner.label }</p>
-                <Banner title={ banner.title } content={ banner.content } icon={ banner.icon } />
-                <Banner title={ banner.title } icon={ banner.icon } />
+                <Banner title={ banner.title } content={ banner.content } icon={ banner.icon } color={ banner.color } />
+                <Banner title={ banner.title } icon={ banner.icon } color={ banner.color } />
             </BannerRows>
         )
     })

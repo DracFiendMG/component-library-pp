@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
+    padding: 0 32px;
 }
 
 :root {
@@ -21,6 +22,11 @@ body {
     --font-indigo: #3730A3;
     --font-purple: #5B21B6;
     --font-pink: #9D174D;
+
+    --icon-circle-check: #34D399;
+    --icon-triangle-exclamation: #FBBF24;
+    --icon-circle-xmark: #F87171;
+    --icon-circle-info: #60A5FA;
 
     --square: 8px;
     --pill: 24px;
@@ -89,10 +95,39 @@ h1 {
     font-weight: 500;
 }
 
+.banners-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: start;
+}
+
+.banners-container > h1 {
+    grid-column: 4 / -1;
+}
+
+.banner-header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: 1 / -1;
+    gap: 32px;
+    font-family: "Permanent Marker", sans-serif;
+    font-size: 30px;
+    color: #5E5D5D;
+}
+
+.banner-header > p:nth-child(1) {
+    grid-column: 4 / 9;
+}
+
+.banner-header > p:nth-child(2) {
+    grid-column: 9 / -1;
+}
+
 .banners {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    grid-column: 1 / -1;
 }
 
 .banner-row {
