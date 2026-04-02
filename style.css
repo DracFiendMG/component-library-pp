@@ -308,8 +308,16 @@ h1 {
 }
 
 .no-pic {
+    flex-direction: column;
+    justify-content: center;
     background-color: #F9FAFB;
     color: #111827;
+}
+
+.no-pic > .testimonial-content {
+    margin-left: 32px;
+    max-width: 768px;
+    text-align: center;
 }
 
 .fa-quote-right {
