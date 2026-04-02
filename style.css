@@ -233,3 +233,91 @@ h1 {
     color: #6B7280;
     line-height: 24px;
 }
+
+.testimonial-container {
+    
+}
+
+.testimonial-row {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.testimonial-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 376px;
+    background-color: #2545B8;
+}
+
+.with-pic {
+    margin-top: 128px;
+}
+
+.testimonial-mobile > .profile {
+    width: 344;
+    height: 206;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-top: -100px;
+}
+
+.testimonial-mobile > .testimonial-content {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 64px 16px;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.testimonial-web {
+    position: relative;
+    background-color: #2545B8;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #FFFFFF;
+    min-height: 400px;
+}
+
+.testimonial-web > .profile {
+    position: absolute;
+    left: 71;
+    width: 384px;
+    height: 464px;
+    object-fit: cover;
+    box-shadow: 0px 20px 25px -5px #0000001A;
+    border-radius: 12px;
+}
+
+.testimonial-web > .testimonial-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 487px;
+    font-size: 24px;
+}
+
+.testimonial-content > span {
+    font-size: 16px;
+}
+
+.testimonial-content > .name {
+    font-weight: 700;
+}
+
+.no-pic {
+    background-color: #F9FAFB;
+    color: #111827;
+}
+
+.fa-quote-right {
+    font-size: 42px;
+    color: #FFFFFF40;
+    rotate: 180deg;
+}
+
+.logo {
+    width: 180px;
+}
