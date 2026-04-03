@@ -36,6 +36,23 @@ body {
     --icon-circle-xmark: #F87171;
     --icon-circle-info: #60A5FA;
 
+    --tooltip-bg-black: #262626;
+    --tooltip-bg-blue: #1E40AF;
+    --tooltip-bg-pink: #A9229B;
+    --tooltip-bg-green: #47AA5D;
+
+    --tooltip-header-white: #FFFFFF;
+    
+    --tooltip-black: #C7C7C7;
+    --tooltip-blue: #E8EDFF;
+    --tooltip-pink: #FFE9FD;
+    --tooltip-green: #E3FFE9;
+
+    --tooltip-inbox-black: #C7C7C7;
+    --tooltip-inbox-blue: #7EA6F2;
+    --tooltip-inbox-pink: #F462E6;
+    --tooltip-inbox-green: #C1FFCF;
+
     --square: 8px;
     --pill: 24px;
 }
@@ -342,4 +359,60 @@ h1 {
 
 .logo {
     width: 180px;
+}
+
+.tooltip-row {
+    display: flex;
+    gap: 24px;
+}
+
+.tooltip {
+    position: relative;
+    background-color: var(--tooltip-bg-black);
+    color: var(--tooltip-black);
+    max-width: 384px;
+    gap: 16px;
+    padding: 18px 52px;
+    border-radius: 8px;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 48px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: var(--tooltip-bg-black);
+    rotate: 45deg;
+    z-index: -1;
+}
+
+.tooltip > svg {
+    position: absolute;
+    /* display: flex; */
+    top: 16;
+    left: 16;
+}
+
+.tooltip > .fa-solid {
+    position: absolute;
+    padding: 0;
+    top: 16;
+    right: 16;
+}
+
+.tooltip-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tooltip-content > p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.tooltip-content > p:first-child {
+    font-weight: 500;
 }
