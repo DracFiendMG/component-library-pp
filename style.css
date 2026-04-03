@@ -361,6 +361,30 @@ h1 {
     width: 180px;
 }
 
+.tooltip-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tooltip-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    width: 100%;
+    max-width: 788px;
+}
+
+.tooltip-header > .gray {
+    color: #5E5D5D;
+}
+
+.tooltips {
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+}
+
 .tooltip-row {
     display: flex;
     gap: 24px;
@@ -368,24 +392,23 @@ h1 {
 
 .tooltip {
     position: relative;
-    background-color: var(--tooltip-bg-black);
-    color: var(--tooltip-black);
     max-width: 384px;
     gap: 16px;
     padding: 18px 52px;
     border-radius: 8px;
+    box-sizing: border-box;
 }
 
-.tooltip::after {
-    content: "";
+.tooltip-arrow {
     position: absolute;
     top: 80%;
     left: 48px;
-    border-width: 15px;
-    border-style: solid;
-    border-color: var(--tooltip-bg-black);
+    width: 30px;
+    height: 30px;
+    background-color: var(--tooltip-bg, var(--tooltip-bg-black));
     rotate: 45deg;
     z-index: -1;
+    border-radius: 2px;
 }
 
 .tooltip > svg {

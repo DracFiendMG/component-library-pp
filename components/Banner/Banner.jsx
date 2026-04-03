@@ -10,7 +10,7 @@ export default function Banner({ title, content, icon, color }) {
 
     return (
         <div className="banner" style={styles}>
-            <i class={`fa-solid fa-${icon}`} style={iconStyle}></i>
+            <i className={`fa-solid fa-${icon}`} style={iconStyle}></i>
             <div>
                 <p>{title}</p>
                 <p>{content}</p>

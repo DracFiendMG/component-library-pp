@@ -1,12 +1,19 @@
-export default function Tooltip() {
+export default function Tooltip({ theme = "black" }) {
+    const styles = {
+        backgroundColor: `var(--tooltip-bg-${theme})`,
+        color: `var(--tooltip-${theme})`,
+        '--tooltip-bg': `var(--tooltip-bg-${theme})`
+    }
+
     return (
-        <div className="tooltip">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-120H640q-30 38-71.5 59T480-240q-47 0-88.5-21T320-320H200v120Zm349-142q31-22 43-58h168v-360H200v360h168q12 36 43 58t69 22q38 0 69-22ZM200-200h560-560Z"/></svg>
+        <div className="tooltip" style={styles}>
+            <span className="tooltip-arrow" aria-hidden="true"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill={`var(--tooltip-inbox-${theme})`}><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-120H640q-30 38-71.5 59T480-240q-47 0-88.5-21T320-320H200v120Zm349-142q31-22 43-58h168v-360H200v360h168q12 36 43 58t69 22q38 0 69-22ZM200-200h560-560Z"/></svg>
             <div className="tooltip-content">
                 <p>Archive notes</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.</p>
             </div>
-            <i class="fa-solid fa-xmark"></i>
+            <i className="fa-solid fa-xmark"></i>
         </div>
     )
 }

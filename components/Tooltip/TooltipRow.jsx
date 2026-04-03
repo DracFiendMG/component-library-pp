@@ -1,10 +1,9 @@
 import Tooltip from "./Tooltip";
 
-export default function TooltipRow() {
+export default function TooltipRow({ children }) {
     return (
         <div className="tooltip-row">
-            <Tooltip />
-            <Tooltip />
+            { children }
         </div>
     )
 }
