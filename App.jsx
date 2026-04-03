@@ -8,10 +8,10 @@ import TestimonialContainer from "./components/Testimonial/TestimonialContainer"
 export default function App() {
     return (
         <>
-            <TestimonialContainer />
             <BadgeContainer />
             <BannerContainer />
             <CardContainer />
+            <TestimonialContainer />
             <Footer />
         </>
     )

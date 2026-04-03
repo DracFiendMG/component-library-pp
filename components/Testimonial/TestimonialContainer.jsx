@@ -2,7 +2,7 @@ import Testimonial from "./Testimonial";
 
 export default function TestimonialContainer() {
     return (
-        <div>
+        <div className="testimonial-container">
             <h1>Testimonials</h1>
             <div className="testimonial-row">
                 <h2>With Pic</h2>
