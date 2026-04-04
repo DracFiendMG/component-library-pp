@@ -36,22 +36,42 @@ body {
     --icon-circle-xmark: #F87171;
     --icon-circle-info: #60A5FA;
 
-    --tooltip-bg-black: #262626;
-    --tooltip-bg-blue: #1E40AF;
-    --tooltip-bg-pink: #A9229B;
-    --tooltip-bg-green: #47AA5D;
+    --tooltip-dark-bg-black: #262626;
+    --tooltip-dark-bg-blue: #1E40AF;
+    --tooltip-dark-bg-pink: #A9229B;
+    --tooltip-dark-bg-green: #47AA5D;
 
-    --tooltip-header-white: #FFFFFF;
-    
-    --tooltip-black: #C7C7C7;
-    --tooltip-blue: #E8EDFF;
-    --tooltip-pink: #FFE9FD;
-    --tooltip-green: #E3FFE9;
+    --tooltip-dark-header: #FFFFFF;
 
-    --tooltip-inbox-black: #C7C7C7;
-    --tooltip-inbox-blue: #7EA6F2;
-    --tooltip-inbox-pink: #F462E6;
-    --tooltip-inbox-green: #C1FFCF;
+    --tooltip-dark-content-black: #C7C7C7;
+    --tooltip-dark-content-blue: #E8EDFF;
+    --tooltip-dark-content-pink: #FFE9FD;
+    --tooltip-dark-content-green: #E3FFE9;
+
+    --tooltip-dark-inbox-black: #C7C7C7;
+    --tooltip-dark-inbox-blue: #7EA6F2;
+    --tooltip-dark-inbox-pink: #F462E6;
+    --tooltip-dark-inbox-green: #C1FFCF;
+
+    --tooltip-light-bg-black: #FFFFFF;
+    --tooltip-light-bg-blue: #E0E7FF;
+    --tooltip-light-bg-pink: #FFF3FC;
+    --tooltip-light-bg-green: #E7FFF3;
+
+    --tooltip-light-title-black: #111827;
+    --tooltip-light-title-blue: #1E40AF;
+    --tooltip-light-title-pink: #A9229B;
+    --tooltip-light-title-green: #137A2A;
+
+    --tooltip-light-inbox-black: #6B7280;
+    --tooltip-light-inbox-blue: #1C51B9;
+    --tooltip-light-inbox-pink: #C7369E;
+    --tooltip-light-inbox-green: #41A557;
+
+    --tooltip-light-content-black: #6B7280;
+    --tooltip-light-content-blue: #1C51B9;
+    --tooltip-light-content-pink: #C7369E;
+    --tooltip-light-content-green: #3C8C4E;
 
     --square: 8px;
     --pill: 24px;
@@ -365,6 +385,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 32px;
 }
 
 .tooltip-header {
@@ -397,6 +418,9 @@ h1 {
     padding: 18px 52px;
     border-radius: 8px;
     box-sizing: border-box;
+    box-shadow: 0px 4px 6px -2px #0000000D;
+    box-shadow: 0px 10px 15px -3px #0000001A;
+    z-index: -1;
 }
 
 .tooltip-arrow {
@@ -407,7 +431,6 @@ h1 {
     height: 30px;
     background-color: var(--tooltip-bg, var(--tooltip-bg-black));
     rotate: 45deg;
-    z-index: -1;
     border-radius: 2px;
 }
 

@@ -8,7 +8,7 @@ export default function TooltipContainer() {
         return (
             <TooltipRow>
                 <Tooltip theme={color} />
-                <Tooltip />
+                <Tooltip theme={`light-${color}`} />
             </TooltipRow>
         )
     })
