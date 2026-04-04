@@ -1,8 +1,11 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    padding: 0 60px;
     background-color: #dddddd;
+}
+
+main {
+    padding: 0 60px;
 }
 
 :root {
@@ -543,4 +546,73 @@ h1 {
 
 .toast-content > p:first-child {
     font-weight: 500;
+}
+
+.footer {
+    margin-top: 64px;
+    border-top: 1px solid #8d8d8d;
+    padding: 24px 60px 32px;
+    background: linear-gradient(180deg, #ffffff 0%, #f6f7f9 100%);
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    width: min(100%, 1200px);
+    margin: 0 auto;
+}
+
+.footer-title,
+.footer-copy {
+    margin: 0;
+    color: #374151;
+}
+
+.footer-title {
+    font-weight: 600;
+}
+
+.footer-copy {
+    width: min(100%, 1200px);
+    margin: 12px auto 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-links > a {
+    text-decoration: none;
+    color: #1f2937;
+    border: 1px solid #d1d5db;
+    background-color: #ffffff;
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-links > a:hover,
+.footer-links > a:focus-visible {
+    color: #1e40af;
+    border-color: #1e40af;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 760px) {
+    .footer {
+        padding: 20px 16px 28px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

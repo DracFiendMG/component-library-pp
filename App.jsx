@@ -10,12 +10,14 @@ import TooltipContainer from "./components/Tooltip/TooltipContainer";
 export default function App() {
     return (
         <>
-            <BadgeContainer />
-            <BannerContainer />
-            <CardContainer />
-            <TestimonialContainer />
-            <TooltipContainer />
-            <ToastContainer />
+            <main>
+                <BadgeContainer />
+                <BannerContainer />
+                <CardContainer />
+                <TestimonialContainer />
+                <TooltipContainer />
+                <ToastContainer />
+            </main>
             <Footer />
         </>
     )
